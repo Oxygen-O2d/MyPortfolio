@@ -1,4 +1,35 @@
-body{
-    background-color: black;
-    color: green;
+#container{
+    display: flex;
+}
+
+#profile{
+    border: solid;
+    width: 230px;
+    height:auto;
+    text-align: top;
+    text-align: center;
+    box-shadow: -4px -4px 4px rgb(73, 72, 72);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+
+#photo{
+    border: solid;
+    width: 100px;
+    height:100px;
+    margin-top: 70px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 4px grey;
+}
+
+#data{
+    border: solid;
+    height: max-content;
+    width: 100%;
+    margin-left: 10px; 
+    border-radius: 15px;
+    text-align: center;  
 }
