@@ -1,16 +1,50 @@
+body{
+    margin:0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding: 0;
+    
+}
 #container{
     display: flex;
+    min-height: 100%;
+    height: 100vh;
+    width: 100%;
+    margin:0px;
+    padding: 0;
+    margin-bottom: 0;
+    /* background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab); */
+    background: linear-gradient(45deg, #010332, #100328, #29011C, #43000D, #530005);
+    background-size: 250% 250%;
+    animation: color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 
 #profile{
-    border: solid;
-    width: 230px;
-    height:auto;
+    
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 250px;
+    min-width: 180px;
+    height:99vh;
+    min-height: 99%;
     text-align: top;
     text-align: center;
-    box-shadow: -4px -4px 4px rgb(73, 72, 72);
+    
+
+    
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.2);
+    
     
 }
 
@@ -22,14 +56,50 @@
     display: inline-block;
     justify-content: center;
     align-items: center;
-    box-shadow: 4px 4px 4px grey;
+    box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.4);
 }
 
 #data{
-    border: solid;
+    
     height: max-content;
     width: 100%;
+    
+    text-align: center;
+    margin-right: 10px;
     margin-left: 10px; 
     border-radius: 15px;
-    text-align: center;  
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: grid;
+    justify-content: center;
+    
+    
+    
+}
+
+#Achievements{
+    border: solid;
+    border-radius: 20px;
+    background-color: #8697C4;
+    min-width: 300px;
+    min-height: 100px;
+    text-align: center;
+    margin-top: 50px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#About{
+    border: solid;
+    border-radius: 20px;
+    background-color: #8697C4;
+    min-width: 300px;
+    min-height: 100px;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
