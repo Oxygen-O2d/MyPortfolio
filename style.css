@@ -1,105 +1,62 @@
 body{
-    margin:0px;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    margin: 0;
     padding: 0;
-    
+    /* background: linear-gradient(45deg, #C33764, #1D2671); */
+    background: linear-gradient(45deg, #649173, #DBD5A4);
 }
+
 #container{
-    display: flex;
-    min-height: 100%;
     height: 100vh;
     width: 100%;
-    margin:0px;
-    padding: 0;
-    margin-bottom: 0;
-    /* background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab); */
-    background: linear-gradient(45deg, #010332, #100328, #29011C, #43000D, #530005);
-    background-size: 250% 250%;
-    animation: color 12s ease-in-out infinite;
-}
-@keyframes color{
-    0%{
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0 50%;
-    }
+    display: flex;
 }
 
 #profile{
-    
-    background-color: #fff;
-    background-color: rgba(255, 255, 255, 0.4);
-    width: 250px;
-    min-width: 180px;
-    height:99vh;
-    min-height: 99%;
-    text-align: top;
+    border: solid;
+    border-radius: 12px;
+    height: 100vh;
+    width: 180px;
+    background-color: rgba(255, 255, 255, 0.3);
     text-align: center;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 
-    
-    border-radius: 15px;
-    
-    
+
 }
 
-#photo{
+#image{
     border: solid;
+    border-radius: 60px;
+    height: 100px;
     width: 100px;
-    height:100px;
-    margin-top: 70px;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.4);
+    margin-bottom: 40px;
 }
 
 #data{
-    
+    border: solid;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
     height: max-content;
     width: 100%;
-    
-    text-align: center;
-    margin-right: 10px;
-    margin-left: 10px; 
-    border-radius: 15px;
-    text-align: center;
-    background-color: #fff;
-    background-color: rgba(255, 255, 255, 0.4);
+    margin-left: 10px;
     display: grid;
-    justify-content: center;
-    
-    
-    
+    text-align: center;
 }
 
-#Achievements{
+.about{
     border: solid;
-    border-radius: 20px;
-    background-color: #8697C4;
-    min-width: 300px;
-    min-height: 100px;
-    text-align: center;
-    margin-top: 50px;
-    margin: auto;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 13px;
 }
 
 #About{
-    border: solid;
-    border-radius: 20px;
-    background-color: #8697C4;
-    min-width: 300px;
-    min-height: 100px;
-    margin: auto;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 10px;
+}
+
+img{
+    border-radius: 60px;
 }
