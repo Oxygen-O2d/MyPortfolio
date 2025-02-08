@@ -126,7 +126,7 @@ img{
 }
 
 h2{
-    margin-top: 30px;
+    margin-top: 25vh;
 }
 
 #abt{
@@ -145,6 +145,30 @@ h2{
     }
     #intro{
         margin-top: 20vh;
+    }
+    body{
+        background-size: 150% 150%;
+        animation: mobgradient 10s ease-in-out infinite;
+    }
+
+    @keyframes mobgradient{
+        0%{
+            background-position: 0% 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0% 50%;
+        }
+    }
+
+    #abt{
+        line-height: 27px;
+    }
+
+    h2{
+        margin-top: 45px;
     }
 }
 
