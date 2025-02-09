@@ -107,11 +107,12 @@ body{
     border: none;
     border-radius: 12px;
     padding: 15px;
-    transition: background 1s;
+    transition: 120ms ease;
 }
 #btn1:hover{
     background: rgba(255, 255, 255, 0.2);
     color:white;
+    scale: 1.2;
 }
 
 img{
