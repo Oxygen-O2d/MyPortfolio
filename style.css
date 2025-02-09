@@ -148,11 +148,12 @@ h2{
 
 #abt{
     color: white;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgb(80, 101, 120);
     width: 60%;
     padding: 12px;
     border-radius: 10px;
     line-height: 30px;
+    position: relative;
 }
 
 @media only screen and (max-width: 415px){
@@ -186,6 +187,42 @@ h2{
 
     h2{
         margin-top: 45px;
+    }
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+#abt::after, #abt::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: conic-gradient(from var(--angle), transparent 70%, blue);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 5px;
+    border-radius: 10px;
+    animation: spin1 3s linear infinite;
+}
+
+#abt::before{
+    filter: blur(1.3rem);
+    opacity: 0.3;
+}
+
+@keyframes spin1{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
     }
 }
 
